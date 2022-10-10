@@ -60,38 +60,6 @@ $ npm run test:cov
 
 ## Support
 
-# Endpoint
-http://localhost:3000/client-controller -- metodo get listar todos
-http://localhost:3000/client-controller/{name} -- metodo get listar por nome
-http://localhost:3000/client-controller/{id} -- metodo get listar por id
-http://localhost:3000/client-controller -- metodo post para adicionar cliente
-  exemplo de body
-  body  {
-           "email": "email@email.com" ,
-	         "name": "user2",
-           "birthDay": "1980-01-02T00:00:00",
-           "password": "userPassWord" ,
-           "spouse": "random girl 2" ,
-	         "son_name": "son #1" ,
-	        "address": "avenue Paulista 2000", 
-	        "phone_number": "99999955555"
-        }
-        
-http://localhost:3000/client-controller -- metodo put para adicionar cliente
-  exemplo de body
-  body  {
-           "email": "email@email.com" ,
-	         "name": "user2",
-           "birthDay": "1980-01-02T00:00:00",
-           "password": "userPassWord" ,
-           "spouse": "random girl 2" ,
-	         "son_name": "son #1" ,
-	        "address": "avenue Paulista 2000", 
-	        "phone_number": "99999955555"
-        }
-        
-http://localhost:3000/client-controller/{id} -- metodo delete para excluir cliente
-
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
 ## Stay in touch
@@ -103,3 +71,42 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+# Endpoint
+http://localhost:3000/client-controller -- metodo get listar todos
+http://localhost:3000/client-controller/{name} -- metodo get listar por nome
+http://localhost:3000/client-controller/{id} -- metodo get listar por id
+http://localhost:3000/client-controller -- metodo post para adicionar cliente
+  exemplo de body
+  body 
+  ```JSON
+	{
+           "email": "email@email.com" ,
+	   "name": "user2",
+           "birthDay": "1980-01-02T00:00:00",
+           "password": "userPassWord" ,
+           "spouse": "random girl 2" ,
+	   "son_name": "son #1" ,
+	   "address": "avenue Paulista 2000", 
+	   "phone_number": "99999955555"
+ 	}
+```
+  
+        
+http://localhost:3000/client-controller -- metodo put para adicionar cliente
+  exemplo de body
+  ```JSON
+	{
+           "email": "email@email.com" ,
+	   "name": "user2",
+           "birthDay": "1980-01-02T00:00:00",
+           "password": "userPassWord" ,
+           "spouse": "random girl 2" ,
+	   "son_name": "son #1" ,
+	   "address": "avenue Paulista 2000", 
+	   "phone_number": "99999955555"
+ 	}
+```
+        
+http://localhost:3000/client-controller/{id} -- metodo delete para excluir cliente
