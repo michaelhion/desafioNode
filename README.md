@@ -110,3 +110,28 @@ http://localhost:3000/client-controller -- metodo put para adicionar cliente
 ```
         
 http://localhost:3000/client-controller/{id} -- metodo delete para excluir cliente
+
+Este app esta configurado para utilizar o sql server, portanto para seu correto funcionamento sugiro que seja instalado o sql server via docker 
+da seguinte forma:
+no terminal digite o seguinte comando para baixar a imagem do sql server:
+docker pull mcr.microsoft.com/mssql/server
+
+depois digite também no terminal 
+
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<YourStrong@Passw0rd>" `
+   -p 1433:1433 --name containername --hostname hostname `
+   -d `
+   mcr.microsoft.com/mssql/server:2022-latest
+
+rode o container e configure ele em uma ferramenta apropriada pra manipular sql, ou utilize o terminal caso vc tenha o conhecimento para acessar o bash da imagem
+crie um database chamado desafionode, rode o sistema após esse procedimento e ele ira criar a tabela do cliente
+
+RECAPITULANDO
+Primeiro faça o procedimento para configurar o sql server (não irá funcionar com outro db)
+crie o database 'desafionode'
+Rode o app
+Fiz também um front em agular para consumir esse app, o repositório é https://github.com/michaelhion/desafionode_ui
+
+Se possivel me de um feed back
+
+Muito Obrigado!!
