@@ -4,6 +4,7 @@ import { ClientController } from './entities/client-controller.entity';
 
 @Controller('client-controller')
 export class ClientControllerController {
+  
   constructor(
     // private authService: AuthService,
     private clientControllerService: ClientControllerService,
