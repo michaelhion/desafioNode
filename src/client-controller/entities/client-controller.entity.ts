@@ -28,5 +28,8 @@ export class ClientController {
 
     @Column()
     phone_number:string;
+
+    @Column()
+    zip_code:string;
     
 }
