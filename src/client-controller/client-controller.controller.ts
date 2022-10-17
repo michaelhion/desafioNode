@@ -6,16 +6,8 @@ import { ClientController } from './entities/client-controller.entity';
 export class ClientControllerController {
   
   constructor(
-    // private authService: AuthService,
     private clientControllerService: ClientControllerService,
     ) {}
-
-    // @UseGuards(AuthGuard('local'))
-    // @Post('auth/login')
-    // async login(@Request() req) {
-    //   return this.authService.login(req.user);
-    // }
-
 
   @Post()
   create(@Body() clientController: ClientController) {
